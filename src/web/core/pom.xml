@@ -18,8 +18,8 @@
   <groupId>org.geoserver.web</groupId>
   <artifactId>gs-web-core</artifactId>
   <packaging>jar</packaging>
-  <version>2.12.1</version>
-  <name>Core UI Module</name>
+  <version>2.12.1-georchestra</version>
+  <name>Core UI Module (geOrchestra customized)</name>
   
   <dependencies>
     <dependency>
@@ -49,12 +49,12 @@
     <dependency>
       <groupId>org.geoserver</groupId>
       <artifactId>gs-main</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geoserver</groupId>
       <artifactId>gs-platform</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -64,7 +64,7 @@
     <dependency>
       <groupId>org.geoserver</groupId>
       <artifactId>gs-main</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
